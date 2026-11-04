@@ -1,0 +1,18 @@
+{
+  "routes": [
+    { "path": "/", "title": "Intranexus sign-in" },
+    { "path": "/signIn", "title": "Sign in" },
+    { "path": "/register", "title": "Register" },
+    { "path": "/dashboard", "title": "Dashboard" },
+    { "path": "/events", "title": "Events" },
+    { "path": "/events/:eventId", "title": "Event details" },
+    { "path": "/matches", "title": "Matches" },
+    { "path": "/teams", "title": "Teams" },
+    { "path": "/teams/:teamId", "title": "Team details" },
+    { "path": "/leaderboard", "title": "Leaderboard" },
+    { "path": "/announcements", "title": "Announcements" },
+    { "path": "/community", "title": "NexSocial" },
+    { "path": "/admin/users", "title": "User approvals" },
+    { "path": "/profile", "title": "Profile" }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "name": "intranexus",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "packageManager": "pnpm@11.25.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "scripts": {
+    "start": "node server/app.js",
+    "dev": "node --watch server/app.js",
+    "db:migrate": "node server/db/migrate.js",
+    "db:bootstrap-admin": "node server/scripts/bootstrap-admin.js",
+    "test": "node --test",
+    "check": "node --check server/app.js && node --check server/db/pool.js && node --check server/db/migrate.js && node --check server/services/auth.js && node --check server/services/tournaments.js && node --check server/routes/api.js"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "pg": "^8.16.3"
+  }
+}
